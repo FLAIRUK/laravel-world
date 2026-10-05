@@ -35,6 +35,7 @@ jobs:
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: Lint
+        if: matrix.stability == 'prefer-stable'
         run: vendor/bin/pint --test
 
       - name: Run tests
