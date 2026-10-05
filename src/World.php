@@ -171,6 +171,7 @@ class World
     {
         $country = $this->country($country);
 
-        return $country === null ? new Collection : $lookup($country->iso2);
+        // The datasets key some collections by code; return plain lists so JSON is always an array.
+        return $country === null ? new Collection : $lookup($country->iso2)->values();
     }
 }

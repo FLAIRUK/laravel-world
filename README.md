@@ -38,6 +38,8 @@
 composer require flairuk/laravel-world
 ```
 
+Requires PHP 8.2 or later with Laravel 12, or PHP 8.3 or later with Laravel 13.
+
 Laravel discovers the service providers and the `World` facade automatically.
 
 <br><br>

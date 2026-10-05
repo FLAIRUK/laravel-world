@@ -119,4 +119,18 @@ class WorldTest extends TestCase
         $this->assertArrayHasKey('aircraft', World::search('A320'));
         $this->assertTrue(World::search('')->isEmpty());
     }
+
+    #[Test]
+    public function a_profile_always_serialises_its_places_as_lists(): void
+    {
+        foreach (['GB', 'VA'] as $code) {
+            $json = json_decode(json_encode(World::profile($code)), true);
+
+            foreach (['cities', 'airports', 'airlines'] as $kind) {
+                $this->assertTrue(array_is_list($json[$kind]), "{$code} {$kind}");
+            }
+        }
+
+        $this->assertTrue(World::citiesIn('GB')->keys()->every(fn ($key) => is_int($key)));
+    }
 }

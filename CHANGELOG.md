@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-world` will be documented in this file.
 
+## 1.0.1 - 2026-10-05
+
+- `citiesIn()` and `airportsIn()` return lists, so a `CountryProfile` always serialises `cities` and `airports` as JSON arrays; they were objects keyed by code, or `[]` when empty.
+- README: requirements.
+
 ## 1.0.0 - 2026-10-05
 
 First release.
