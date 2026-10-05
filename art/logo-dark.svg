@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img" aria-label="Laravel World">
+  <title>Laravel World</title>
+  <defs>
+    <linearGradient id="world-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(16 16)" color="#1D4ED8">
+    <rect width="128" height="128" rx="32" fill="url(#world-tile)"/>
+    <g fill="none" stroke="#fff" stroke-linecap="round">
+      <circle cx="64" cy="64" r="30" stroke-width="6"/>
+      <ellipse cx="64" cy="64" rx="12" ry="30" stroke-width="5"/>
+      <path d="M34 64H94" stroke-width="5"/>
+      <ellipse cx="64" cy="64" rx="50" ry="17" stroke-width="5" stroke-dasharray="2 10" transform="rotate(-24 64 64)" opacity=".8"/>
+    </g>
+    <path d="M64 18C68 18 70 24 70 30V52L104 72V80L70 70V92L80 100V106L64 102L48 106V100L58 92V70L24 80V72L58 52V30C58 24 60 18 64 18Z" fill="#fff" transform="translate(104 38) rotate(60) scale(.34) translate(-64 -62)"/>
+  </g>
+  <text x="172" y="66" fill="#9198A1" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="4">LARAVEL</text>
+  <text x="169" y="118" fill="#F0F6FC" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1.5">World</text>
+</svg>

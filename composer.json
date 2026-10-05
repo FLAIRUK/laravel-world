@@ -1,0 +1,63 @@
+{
+    "name": "flairuk/laravel-world",
+    "description": "Countries, cities, airports, airlines and aircraft for Laravel, joined up: one facade over the FLAIRUK data packages.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "countries", "cities", "airports", "airlines", "aircraft", "iata", "iso-3166", "world"],
+    "homepage": "https://github.com/FLAIRUK/laravel-world",
+    "authors": [
+        {
+            "name": "Phil Graham",
+            "homepage": "https://github.com/ijeffro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "flairuk/laravel-countries": "^1.0",
+        "ijeffro/laravel-aircrafts": "^1.0",
+        "ijeffro/laravel-airlines": "^1.0",
+        "ijeffro/laravel-airports": "^1.0",
+        "ijeffro/laravel-cities": "^1.0",
+        "illuminate/console": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.5|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FLAIRUK\\World\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FLAIRUK\\World\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "format": "pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FLAIRUK\\World\\WorldServiceProvider"
+            ],
+            "aliases": {
+                "World": "FLAIRUK\\World\\Facades\\World"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "support": {
+        "source": "https://github.com/FLAIRUK/laravel-world",
+        "issues": "https://github.com/FLAIRUK/laravel-world/issues"
+    }
+}
