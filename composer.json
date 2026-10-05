@@ -14,11 +14,11 @@
     ],
     "require": {
         "php": "^8.2",
+        "flairuk/laravel-aircrafts": "^1.0",
+        "flairuk/laravel-airlines": "^1.0",
+        "flairuk/laravel-airports": "^1.0",
+        "flairuk/laravel-cities": "^1.0",
         "flairuk/laravel-countries": "^1.0",
-        "ijeffro/laravel-aircrafts": "^1.0",
-        "ijeffro/laravel-airlines": "^1.0",
-        "ijeffro/laravel-airports": "^1.0",
-        "ijeffro/laravel-cities": "^1.0",
         "illuminate/console": "^12.0|^13.0",
         "illuminate/support": "^12.0|^13.0"
     },

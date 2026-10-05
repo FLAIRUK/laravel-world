@@ -49,10 +49,10 @@ Each dataset is its own package, and `laravel-world` requires all five:
 | Package | Data | Facade |
 | --- | --- | --- |
 | [flairuk/laravel-countries](https://github.com/FLAIRUK/laravel-countries) | ISO 3166 countries | `Countries` |
-| [ijeffro/laravel-cities](https://github.com/FLAIRUK/laravel-cities) | IATA city codes | `Cities` |
-| [ijeffro/laravel-airports](https://github.com/FLAIRUK/laravel-airports) | IATA airport codes | `Airports` |
-| [ijeffro/laravel-airlines](https://github.com/FLAIRUK/laravel-airlines) | IATA airline designators | `Airlines` |
-| [ijeffro/laravel-aircrafts](https://github.com/FLAIRUK/laravel-aircrafts) | IATA aircraft type codes | `Aircrafts` |
+| [flairuk/laravel-cities](https://github.com/FLAIRUK/laravel-cities) | IATA city codes | `Cities` |
+| [flairuk/laravel-airports](https://github.com/FLAIRUK/laravel-airports) | IATA airport codes | `Airports` |
+| [flairuk/laravel-airlines](https://github.com/FLAIRUK/laravel-airlines) | IATA airline designators | `Airlines` |
+| [flairuk/laravel-aircrafts](https://github.com/FLAIRUK/laravel-aircrafts) | IATA aircraft type codes | `Aircrafts` |
 
 Their facades, validation rules and models all work as their READMEs describe. `World` adds what none of them can do alone: links between the datasets.
 
